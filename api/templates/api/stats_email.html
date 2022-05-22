@@ -49,11 +49,25 @@
     <tr>
       <td style="padding: 40px 0">
         <img style="margin-bottom: 20px" src="{% static "api/icon-award.png" %}"
-        width="50" alt="Socialize.berlin" />
+        width="50" alt="Award Icon" />
         <h2 style="font-weight: bold">Neighbourhood of the week:</h2>
         <p>
           <b>{{ most_popular_neighbourhood }}</b><br />
           with {{ most_popular_neighbourhood_count }} new users
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 40px 0">
+        <h2 style="font-weight: bold">News:</h2>
+        
+        <p><b>We opened our source code!</b><br />
+        We are still working on documentation, contributing guidelines and configuring todos/roadmap. Right now it's a bit of chaos and any help is appreciated :)<br /><br />
+        Tech stack: React.js/Typescript, Django/Python, GraphQL, PostgresQL.</p>
+        <p>
+          <a href="https://github.com/socialize-berlin/" style="font-weight: bold">
+            <img style="margin-right: 10px; vertical-align: middle" src="{% static "api/icon-github.png" %}" width="20" alt="Github logo" /> Check on Github
+          </a>
         </p>
       </td>
     </tr>
