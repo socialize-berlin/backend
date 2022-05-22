@@ -15,4 +15,4 @@ def SurveyVoteView(request, survey_id, option_id):
   option.votes = option.votes + 1
   option.save()
 
-  return redirect("http://socialize.berlin/")
+  return redirect("http://socialize.berlin/#thank-you-for-voting")
