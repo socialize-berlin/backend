@@ -91,7 +91,7 @@
           {% for option in survey.options.all %}
           <div style="padding: 20px 0">
             <a
-              href="https://api.socialize.berlin/survey/{{ option.survey.uuid }}/vote/{{ option.uuid }}"
+              href="https://api.socialize.berlin/utils/survey/{{ option.survey.uuid }}/vote/{{ option.uuid }}"
             >
               <img src="{% static "api/icon-circle.png" %}" width="30" style="vertical-align: middle; margin-right: 20px" alt="{{ option.name }}" />
               <span>{{ option.name }}</span>
