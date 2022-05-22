@@ -1,0 +1,22 @@
+{% extends 'api/base.html' %} {% block content %}
+<td width="100%">
+  <table
+    width="100%"
+    cellpadding="30"
+    cellspacing="0"
+    style="text-align: center"
+  >
+    <tr>
+      <td>
+        <h1>Confirm your email address</h1>
+        <p>Click button below to confirm your email</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a class="button" href="{{ confirm_link }}">Confirm email</a>
+      </td>
+    </tr>
+  </table>
+</td>
+{% endblock %}

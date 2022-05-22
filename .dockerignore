@@ -1,0 +1,16 @@
+### Django ###
+*.log
+*.pot
+*.pyc
+.idea
+.vscode
+__pycache__/
+media/
+/static
+temp-uploads/
+db.json
+
+### Environment ###
+.env
+.env.production
+venv/

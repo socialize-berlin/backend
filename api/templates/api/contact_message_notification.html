@@ -1,0 +1,9 @@
+{% extends 'api/base.html' %} {% block content %}{% load static %}
+<h4>Hey,</h4>
+<p>You have a new message from:</p>
+<p>
+  Name: {{ message.name }}<br />
+  Email: {{ message.email }}
+</p>
+<p style="font-style: italic">Message: {{ message.message }}</p>
+{% endblock %}

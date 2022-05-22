@@ -1,0 +1,8 @@
+{% extends 'api/base.html' %} {% block content %}{% load static %}
+<h4>Hey {{ connection.author.first_name }},</h4>
+
+<p>
+  {{ connection.invitee.first_name }} has accepted your invitation to connect.
+</p>
+<a class="button" href="https://socialize.berlin/">Start chatting!</a>
+{% endblock %}

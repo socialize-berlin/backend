@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    {% include 'api/styles.html' %}
+  </head>
+
+  <body style="margin: 0; background: #eee">
+    {% include 'api/header.html' %}
+
+    <table
+      style="max-width: 800px; margin: 30px auto 0; padding-bottom: 100px"
+      width="100%"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+    >
+      <tr>
+        <td>
+          <table
+            width="100%"
+            style="background: #fff; padding: 60px; border-radius: 30px"
+            cellpadding="0"
+            cellspacing="0"
+          >
+            <tbody>
+              <tr width="100%" class="content">
+                <td>{% block content %} {% endblock %}</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr width="100%">
+        {% include 'api/footer.html' %}
+      </tr>
+    </table>
+  </body>
+</html>

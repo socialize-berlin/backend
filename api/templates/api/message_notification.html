@@ -1,0 +1,8 @@
+{% extends 'api/base.html' %} {% block content %}{% load static %}
+<h4>Hey {{ interlocutor.first_name }},</h4>
+<p>You have a new message from {{ message.author.first_name }}:</p>
+<p style="font-style: italic">{{ message.message }}</p>
+<a class="button" href="https://socialize.berlin/"
+  >Reply {{ message.author.first_name }}</a
+>
+{% endblock %}
