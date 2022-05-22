@@ -50,9 +50,9 @@
       <td style="padding: 40px 0">
         <img style="margin-bottom: 20px" src="{% static "api/icon-award.png" %}"
         width="50" alt="Award Icon" />
-        <h2 style="font-weight: bold">Neighbourhood of the week:</h2>
+        <h2 style="font-weight: bold; color: #000">Neighbourhood of the week:</h2>
+        <h1>{{ most_popular_neighbourhood }}</h1>
         <p>
-          <b>{{ most_popular_neighbourhood }}</b><br />
           with {{ most_popular_neighbourhood_count }} new users
         </p>
       </td>
@@ -77,10 +77,15 @@
         <div
           style="
             width: 100%;
-            max-width: 200px;
+            max-width: 240px;
             margin: 0 auto;
             padding: 20px 0;
             text-align: left;
+            font-family: Helvetica, Arial;
+            font-size: 18px;
+            line-height: 1.5;
+            letter-spacing: 0.01em;
+            font-weight: 300;
           "
         >
           {% for option in survey.options.all %}
@@ -88,9 +93,7 @@
             <a
               href="https://api.socialize.berlin/survey/{{ option.survey.uuid }}/vote/{{ option.uuid }}"
             >
-              <img src="{% static "api/icon-circle.png" %}" width="30"
-              style="vertical-align: middle; margin-right: 20px" alt="{{
-              option.name }}" />
+              <img src="{% static "api/icon-circle.png" %}" width="30" style="vertical-align: middle; margin-right: 20px" alt="{{ option.name }}" />
               <span>{{ option.name }}</span>
             </a>
           </div>
